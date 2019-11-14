@@ -10,13 +10,8 @@ import {
 
 const MyMapComponent = compose(
   withProps({
-    /**
-     * Note: create and replace your own key in the Google console.
-     * https://console.developers.google.com/apis/dashboard
-     * The key "AIzaSyBkNaAGLEVq0YLQMi-PYEMabFeREadYe1Q" can be ONLY used in this sandbox (no forked).
-     */
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBkNaAGLEVq0YLQMi-PYEMabFeREadYe1Q&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBHjnP128e_i3I49l_Sq9izuR0T96nazn8&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `100%` }} />
@@ -24,10 +19,29 @@ const MyMapComponent = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
+  <GoogleMap defaultZoom={8} defaultCenter={{ lat: 43.7184034, lng: -79.5184845 }}>
     {props.isMarkerShown && (
-      <Marker position={{ lat: -34.397, lng: 150.644 }} />
+      <Marker position={{ lat: 43.696526, lng: -79.286201 }} />
     )}
+        {props.isMarkerShown && (
+      <Marker position={{ lat: 43.696526, lng: -79.286201 }} />
+    )}
+{props.isMarkerShown && (
+      <Marker position={{ lat: 43.725113, lng: -79.285385 }} />
+    )}
+    {props.isMarkerShown && (
+      <Marker position={{ lat: 43.725113, lng: -79.285385 }} />
+    )}
+    {props.isMarkerShown && (
+          <Marker position={{ lat: 43.680157, lng: -79.337433 }} />
+    )}
+    {props.isMarkerShown && (
+          <Marker position={{ lat: 43.680157, lng: -79.337433 }} />
+    )}
+    {props.isMarkerShown && (
+          <Marker position={{ lat: 43.680157, lng: -79.337433 }} />
+    )}
+
   </GoogleMap>
 ));
 

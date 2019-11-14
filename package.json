@@ -1,6 +1,6 @@
 {
   "name": "react-google-maps-example",
-  "description": null,
+  "description": "",
   "version": "0.0.0",
   "dependencies": {
     "recompose": "0.26.0",
